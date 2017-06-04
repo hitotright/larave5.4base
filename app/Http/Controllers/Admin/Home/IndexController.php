@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin\Home;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class IndexController extends Controller
 {
@@ -14,7 +15,14 @@ class IndexController extends Controller
      */
     public function index()
     {
-        return view('admin.home.index');//
+//        return view('admin.home.index');
+//       if(Auth::attempt(['login_name'=>'admin','password'=>'123456'])){
+//            echo 1;
+//        }else{
+//           echo 0;
+//       }
+       echo 'sss';
+
     }
 
     /**
